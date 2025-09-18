@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{%block title%}
+  Welcome to Market
+{%endblock%}   
+
+{%block content%}
+<div id="marketCarouselIndicator" class="carousel slide">
+  <!--carousel-->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#marketCarouselIndicator" data-bs-slide-to="0" class="active" 
+      aria-current="true" aria-lable="Slide 1"></button>
+    <button type="button" data-bs-target="#marketCarouselIndicator" data-bs-slide-to="1" aria-lable="Slide 2"></button>
+    <button type="button" data-bs-target="#marketCarouselIndicator" data-bs-slide-to="2" aria-lable="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <img src="https://t3.ftcdn.net/jpg/00/63/25/12/360_F_63251258_XMxdxQWrRiv3eY4VatQY5iDwV7lrOiPm.jpg" class="d-block mx-auto w-100 carousel-img" style="height: 600px; object-fit: cover">
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://t3.ftcdn.net/jpg/01/20/36/84/360_F_120368458_jM1rSc1O5k58W6KM4aaexJnVpTaD768g.jpg" class="d-block mx-auto w-100 carousel-img" style="height: 600px; object-fit: cover">
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309662.jpg" class="d-block mx-auto w-100 carousel-img" style="height: 600px; object-fit: cover">
+    </div>
+  </div>
+
+  <!--arrows-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#marketCarouselIndicator" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#marketCarouselIndicator" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <!--fixed overlay content-->
+  <div class="position-absolute top-50 start-50 translate-middle text-center px-4 py-3" style="color:white; background: rgba(0, 0, 0, 0.5); border-radius: 20px;">
+    <h1 class="display-3 font-weight-bold">Ping's Market</h1>
+    <br>
+    <p class="lead font-weight-normal">Start purchasing products by clicking the button below</p>
+    <a class="btn btn-dark" href="/market">Get Started</a>
+    <br>
+</div>
+{%endblock%}
